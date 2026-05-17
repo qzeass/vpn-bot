@@ -1,0 +1,42 @@
+telegram:
+  token: "YOUR_TELEGRAM_BOT_TOKEN"
+
+database:
+  path: "/var/lib/vpnbot/vpnbot.db"
+
+xui:
+  base_url: "http://localhost:54321"
+  username: "admin"
+  password: "admin"
+  inbound_id: 1
+
+admin:
+  ids:
+    - 123456789
+
+billing:
+  free_limit_gb: 3
+  overdraft_cost_per_gb: 2
+  unlimited_price_month: 100
+  worker_interval_min: 15
+  ton_checker_interval_sec: 45
+  # Как часто проверять новые донаты DonationAlerts (в секундах)
+  da_checker_interval_sec: 60
+
+payments:
+  donation_alerts:
+    access_token: "YOUR_DONATIONALERTS_ACCESS_TOKEN"
+    # Имя страницы на DonationAlerts (donationalerts.com/r/ВАШ_НИК)
+    page_name: "your_page"
+    # Комиссия DonationAlerts (0.12 = 12%)
+    commission_rate: 0.12
+
+  ton:
+    wallet_address: "YOUR_TON_WALLET_ADDRESS"
+    toncenter_api_key: "YOUR_TONCENTER_API_KEY"
+    ton_to_rub: 450.0
+    usdt_to_rub: 90.0
+    usdt_master_addr: "EQBynBO23ywHy_CgarY9NK9FTz0yDsG82PtcbSTQgGoXwiuA"
+
+referral:
+  reward_percent: 10
