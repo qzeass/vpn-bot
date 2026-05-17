@@ -1,4 +1,4 @@
-module github.com/yourusername/vpn-bot
+module github.com/qzeass/vpn-bot
 
 go 1.21
 
